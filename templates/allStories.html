@@ -1,0 +1,12 @@
+
+{%block navStuff%}
+<a href="/storyForm">Random Story</a>
+{%endblock%}
+
+    {%block content%}
+    {%for story in lst%}
+    <br>
+    <label><a href="/storyForm?story ={{story}}">Story:</a>{{story.template}}</label>
+    <br>
+    {%endfor%}
+    {%endblock%}

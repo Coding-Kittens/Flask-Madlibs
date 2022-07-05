@@ -1,0 +1,18 @@
+
+{%extends "base.html"%}
+
+{%block navStuff%}
+<a href="/allStories">Pick a Story</a>
+<a href="/storyForm">Random Story</a>
+{%endblock%}
+
+
+{%block title%}Story page{%endblock%}
+
+    {%block content%}
+
+      <h2>Heres your Madlib story!</h2>
+      <br>
+      <p>{{text}}</p>
+
+    {%endblock%}
